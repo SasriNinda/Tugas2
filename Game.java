@@ -38,4 +38,48 @@ public class Game
             }
         }
     }
+	public void Penjumlahan()
+    {
+        while (c)
+        {
+            System.out.print("Masukkan Jawabannya : ");
+            int tanya = a.nextInt();
+            jumlah = jawab + jawab1;
+            if (jumlah == tanya)
+            {
+                System.out.println("Jawaban Anda Benar");
+                int Skor = 10;
+                tambahSkor += Skor;
+                System.out.println("Skor Anda : " + tambahSkor);
+                c = false;
+            }
+            if (jumlah != tanya)
+            {
+                System.out.print("Jawaban Anda Salah ");
+                c = true;
+            }
+        }
+    }
+    public void Pengurangan()
+    {
+        while (p)
+        {
+            System.out.print("Masukkan Jawabannya : ");
+            int tanya1 = a.nextInt();
+            jumlah1 = jawab - jawab1;
+            if (jumlah1 == tanya1)
+            {
+                System.out.println("Jawaban Anda Benar");
+                int Skor = 10;
+                tambahSkor += Skor;
+                System.out.println("Skor Anda : " + tambahSkor);
+                p = false;
+            }
+            if (jumlah1 != tanya1)
+            {
+                System.out.print("Jawaban Anda Salah ");
+                p = true;
+            }
+        }
+    }
 }
